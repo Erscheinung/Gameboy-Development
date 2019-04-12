@@ -14,18 +14,21 @@ void main(){
     SHOW_SPRITES;
 
     while(1){ 
-        //for looping animation: continuously switching between 2 tiles (with some delay: line 25)
-        if(current_sprite_index == 0){ 
-            current_sprite_index = 1;
-        }
-        else {
-            current_sprite_index = 0;
-        }
-        set_sprite_tile(0,current_sprite_index);
-        delay(1000); //not miliseconds, but CPU cycles
-
-        //for moving sprite 1 around the screen: 10 pixels horizontally and 0 vertically
-        scroll_sprite(0,10,0);  
-        }      
+        //joypad() returns value of key being pressed
+        switch(joypad()){
+            case J_LEFT: 
+                scroll_sprite(0,-10,0);
+                break;
+            case J_RIGHT:
+                scroll_sprite(0,10,0);
+                break;
+            case J_UP:
+                scroll_sprite(0,0,-10);
+                break;
+            case J_DOWN: 
+                scroll_sprite(0,0,10);
+                break;
+        } 
+        delay(100); //not miliseconds, but CPU cycles
+    }      
 }
-
