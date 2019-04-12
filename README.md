@@ -1,4 +1,4 @@
-# GameboyDevelopment
+# Gameboy Development
 Game development projects for the Gameboy
 
 # Hello World 
@@ -29,6 +29,7 @@ Create a make.bat file and paste the following:
     c:\gbdk\bin\lcc -Wa-l -Wl-m -Wl-j -DUSE_SFR_FOR_REG -o main.gb main.o
     
 * This uses the lcc.exe file from the gdbk, and creates a .gb file you can drag-and-drop into a emulator like [VBA](http://www.emulator-zone.com/doc.php/gba/vboyadvance.html)
+* EMULATOR FOR DEBUGGING, ETC: bgb [Link](http://bgb.bircd.org/#downloads)
 
 ### Compiling with devkitadv (another sdk)
 * Guide [Link](http://loirak.com/gameboy/gbatutor.php) : Not working for me currently due to 32 bit/64 bit incompatibility issues.
