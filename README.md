@@ -20,8 +20,9 @@ GameBoy Development Kit [Link](https://sourceforge.net/projects/gbdk/)
 * Youtube [video](https://www.youtube.com/watch?v=rCN-jwYn7Qw&t=577s) for introduction to tiles and how to use them.
 
 ## Setting up the workspace
-* Ideally, place the folder in the root of `C:/` .
-* Inside, create a C file (main.c) and include gba/gba.h header file: `#include<gb/gb.h>` .
+1. Ideally, place the folder in the root of `C:/`
+2. Inside, create a C file (main.c) and include gba/gba.h header file: `#include<gb/gb.h>`
+
 Create a make.bat file and paste the following:
 
     c:\gbdk\bin\lcc -Wa-l -Wl-m -Wl-j -DUSE_SFR_FOR_REG -c -o main.o main.c
