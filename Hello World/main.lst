@@ -1,9 +1,9 @@
                               1 ;--------------------------------------------------------
                               2 ; File Created by SDCC : FreeWare ANSI-C Compiler
-                              3 ; Version 2.2.1 Fri Apr 12 10:02:54 2019
+                              3 ; Version 2.2.1 Fri Apr 12 10:54:12 2019
                               4 
                               5 ;--------------------------------------------------------
-                              6 	.module lcc120440
+                              6 	.module lcc68160
                               7 	
                               8 ;--------------------------------------------------------
                               9 ; Public variables in this module
@@ -190,8 +190,9 @@
    000C                     190 ___main_end:
                             191 	.area _CODE
    000C                     192 __str_0:
-   000C 48 65 6C 6C 6F      193 	.ascii "Hello"
-   0011 00                  194 	.db 0
+   000C 48 45 4C 4C 4F 20   193 	.ascii "HELLO WORLD"
+        57 4F 52 4C 44
+   0017 00                  194 	.db 0
 ASxxxx Assembler V01.75  (GameBoy Z80-like CPU), page 1.
 
 Symbol Table
@@ -323,7 +324,7 @@ Symbol Table
 
 Area Table
 
-   0 _CODE                              size   12   flags 0
+   0 _CODE                              size   18   flags 0
    1 _DATA                              size    0   flags 0
    2 _OVERLAY                           size    0   flags 0
    3 _ISEG                              size    0   flags 0
